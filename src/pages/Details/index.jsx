@@ -5,7 +5,11 @@ export function Details() {
   return (
     <Container>
       <h1>Ola mundo</h1>
-      <Button />
+      <span>Torezone</span>
+
+      <Button title="Login" loading />
+      <Button title="Cadastrar" />
+      <Button title="Voltar" />
     </Container>
   );
 }
