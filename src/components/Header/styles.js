@@ -11,6 +11,32 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 0 80px;
+`;
 
-  background: red;
+export const Profile = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  > img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+
+    span {
+      font-size: 14px;
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
+    }
+
+    strong {
+      font-size: 18px;
+      color: ${({ theme }) => theme.COLORS.WHITE};
+    }
+  }
 `;
